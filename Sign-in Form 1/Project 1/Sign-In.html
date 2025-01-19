@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div align="center">
+    <form>
+        <div class="form_container">
+            <div class="in_form">
+                <h2>Sign-In</h2>
+
+                <img src="assets/default_picture.png" id="image_profile_pic">
+                <label for="input_profile_picture" id="upload_profile_picture">Choose Profile Image</label>
+                <input type="file" accept="image/png, image/jpeg, image,jpg" id="input_profile_picture">
+
+                <div class="wave-group">
+                    <input required type="text" class="input">
+                    <span class="bar"></span>
+                    <label class="label">
+                      <span class="label-char" >Name</span>
+                    </label>
+                  </div>
+
+                  <div class="wave-group">
+                    <input required type="text" class="input">
+                    <span class="bar"></span>
+                    <label class="label">
+                      <span class="label-char" >Surname</span>
+                    </label>
+                  </div>
+
+                  <div class="wave-group">
+                    <input required type="email" class="input">
+                    <span class="bar"></span>
+                    <label class="label">
+                      <span class="label-char" >Email Address</span>
+                    </label>
+                  </div>
+
+                  <div class="wave-group">
+                    <div class="align">
+                    <input required type="password" id="password" class="input">
+                    <span class="bar"></span>
+                    <label class="label">
+                        
+                      <span class="label-char" >Password</span>
+                    </label>
+                    <img src="assets/eye-close.png"  id="eyeicon">
+                </div>
+                  </div>
+
+                  <div class="wave-group">
+                    <input required type="password" id="conPassword" class="input">
+                    <span class="bar"></span>
+                    <label class="label">
+                      <span class="label-char" >Confrim Password</span>
+                    </label>
+                    <img src="assets/eye-close.png"  id="eyeicon2">
+                  </div>
+            
+                  
+<button class="animated-button">
+  <span>Submit</span>
+  <span></span>
+</button>
+
+            </div>
+        </div>
+
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

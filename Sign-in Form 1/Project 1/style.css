@@ -1,0 +1,233 @@
+body{
+    background: #040717;
+}
+h2{
+color: aqua ;
+}
+
+
+/*edits how the image is displayed*/
+#image_profile_pic{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+/*edits the label below the image*/
+#upload_profile_picture{
+    display: block;
+    width: 200px;
+    background: aliceblue;
+    color: black;
+    
+    padding: 12px;
+    border-radius: 5px;
+}
+
+#upload_profile_picture:hover{
+background: grey;
+color: black;
+cursor: pointer;
+}
+/*hides the choose the file button*/
+#input_profile_picture{
+    display: none;
+}
+
+/*Styles The Form */
+.form_container{
+	position: relative;
+	width: 550px;
+	height: 850px;
+	max-width: 600px;
+	max-height: 1000px;
+	background: #040717;
+	border-radius: 50px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin-top: 60px;
+	line-height: 13px;
+}
+.form_container h2{
+	font-size: 40px;
+}
+.form_container::before{
+	
+	position: absolute;
+	width: 170%;
+	height: 170%;
+	content: '';
+	background-image: conic-gradient(transparent, transparent, transparent, #a630fa);
+	animation: rotate_border 6s linear infinite;
+
+}
+.form_container::after{
+	
+	position: absolute;
+	width: 170%;
+	height: 170%;
+	content: '';
+	background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+	animation: rotate_border 6s linear infinite;
+	animation-delay: -3s;
+}
+@keyframes rotate_border{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.in_form{
+	position: absolute;
+	content: '';
+	background-color: #040717;
+   align-items: center;
+	border-radius: 50px 5px;
+	inset: 5px;
+	padding: 50px 40px;
+	z-index: 10;
+	color: #0f070f;
+	font-weight: bold;
+
+} 
+
+/*Password eye icon */
+.wave-group img{
+	width: 20px;
+	cursor: pointer;
+}
+/*edits the input fields*/
+.wave-group {
+    position: relative;
+  }
+  
+  .wave-group .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    margin-top: 28px;
+    width: 300px;
+    color: #edeef2;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+  }
+  
+  .wave-group .input:focus {
+    outline: none;
+  }
+  
+  .wave-group .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 70px;
+    top: 10px;
+    display: flex;
+  }
+  
+  .wave-group .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+  }
+  
+  .wave-group .input:focus ~ label .label-char,
+  .wave-group .input:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #edeef2;
+  }
+  
+  .wave-group .bar {
+    position: relative;
+    display: block;
+    width: 320px;
+  }
+  
+  .wave-group .bar:before,.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #75edff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .wave-group .bar:before {
+    left: 50%;
+  }
+  
+  .wave-group .bar:after {
+    right: 50%;
+  }
+  
+  .wave-group .input:focus ~ .bar:before,
+  .wave-group .input:focus ~ .bar:after {
+    width: 50%;
+  }
+  /*Style the button*/
+  /* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 46px;
+    border: none;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #ffffffd8;
+    box-shadow: 0 0 0 2px #ffffff20;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .animated-button span:last-child {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    width: 20px;
+    height: 20px;
+    background-color: #21f375;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .animated-button span:first-child {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 5px #64da70;
+    color: #000000;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+  }
+  
+  .animated-button:hover span:last-child {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+  }
+ 
+
+  
+  
+  
