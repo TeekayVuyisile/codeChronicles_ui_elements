@@ -98,6 +98,9 @@ cursor: pointer;
 
 /*Password eye icon */
 .wave-group img{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 30%;
 	width: 20px;
 	cursor: pointer;
 }
@@ -110,7 +113,7 @@ cursor: pointer;
     font-size: 16px;
     padding: 10px 10px 10px 5px;
     display: block;
-    margin-top: 28px;
+    margin-top: 30px;
     width: 300px;
     color: #edeef2;
     border: none;
@@ -176,9 +179,9 @@ cursor: pointer;
     width: 50%;
   }
   /*Style the button*/
-  /* From Uiverse.io by gharsh11032000 */ 
+ 
 .animated-button {
-    margin-top: 10px;
+    margin-top: 30px;
     position: relative;
     display: inline-block;
     padding: 10px 46px;
